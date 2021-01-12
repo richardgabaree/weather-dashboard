@@ -1,0 +1,14 @@
+body {
+    background-color: white;
+
+}
+
+.jumbotron {
+    background-color: rgb(48, 171, 241);
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: rgb(3, 3, 3);
+    text-align: center;
+    height: 60px;
+    padding: 3%;
+}
