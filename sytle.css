@@ -50,4 +50,14 @@ h1 {
     cursor: pointer;
   }
   
+  .icon {
+    font-size: 17px;
+    border: 1px solid grey;
+    margin: 20px;
+    padding: 35px;
+    float: left;
+    height: 48px;
+    width: 24px;
+    background: #f1f1f1;
+  }
   
