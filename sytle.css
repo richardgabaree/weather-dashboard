@@ -22,13 +22,11 @@ h1 {
 .search-label {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(8, 5, 5);
-    text-align: center;
+    text-align: left;
     font-size: 25px;
     padding-top: 40px;
 }
 
-
-  
   /* Style the search field */
   input[type=text] {
     padding: 10px;
@@ -52,26 +50,4 @@ h1 {
     cursor: pointer;
   }
   
-  button:hover {
-    background: #0b7dda;
-  }
   
-  /* Clear floats */
-  form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
- 
-  @media only screen and (min-width: 24px) {
-          #dashboard {
-            flex-grow: 1;
-          }
-          
-          
-#five-day-weather-card {
-            width: 20%;
-          }
-        }
- 

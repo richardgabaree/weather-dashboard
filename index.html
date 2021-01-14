@@ -2,74 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Weather Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
     <link rel="stylesheet" href="sytle.css">
-
-    
+    <title>Weather Dashboard</title>
 </head>
 
 <body>
-
-    <main>
-
-                    <nav class="jumbotron jumbotron-fluid dark-blue">
-                        <h1>Weather Dashboard</h1>
-                    </nav>
-               
-        <section>
-            <!-- Search Form -->
-            <!-- <form id="form" class="form"> -->
-                
-                <br><br>
-
-                <div>
-                    <div class="row">
-                        <div class="col-md-3">
-                    <!-- Search Block -->
-                            <label 
-                                for="search-term" id="search-label" class="search-label">Search for a City;
-                            </label>
-                        </div>
-                   
-
-                        <div class=row id="weather-info">
-                            <div class="col-md-9">
-                                <div >
-
-                                </div>
-                            </div>
-                        
-                        </div>
-                    
-                    <div class="row" id="daily-weather-row">
-                        <div class="col-md-8">
-                          <h3>5-Day Forecast:</h3>
-                          <div class="row" id="5-day-forecast-cards">
-                          </div>
+    <nav class="jumbotron jumbotron-fluid dark-blue">
+        <h1>Weather Dashboard</h1>
+    </nav>
+        
+        <div>
+            <div class="row, conatiner d.inline">
+                <div class="row">
+                <!-- <div id="aside" class="col-md-3"> -->
+                    <div id="sidebar" class="col-md-3">
+                <!-- Search Block -->
+                        <label 
+                            for="search-term" id="search-label" class="search-label">Search for a City;
+                        </label>
+                            <input 
+                                class="form-control"
+                                type="text" 
+                                placeholder="Search for city" 
+                                name="search">
+                            <button id="search-btn" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
                         </div>
                     </div>
-                
-                <br>  
-                <div>
-                <input 
-                    class="form-control"
-                    type="text" 
-                    placeholder="Search.." 
-                    name="search">
-                        <button id="search-btn" type="button">
-                            <i class="fa fa-search"></i>
-                         </button>
-                        </div>
+                </div>
+
+                <div class="col-md-9 float-left">
+                    <!-- <row class="col-md-12"> -->
+                        <h2 class="city">City: </h2>
+                        <p class="temp">Temp: </p>
+                        <p class="humidity">Humidity: </p>
+                        <p class="wind-speed">Wind Speed: </p>
+                        <p class="uvIndex">UV Index: </p>
+                    </row>
+                </div>
+                      
+            <div row >
+            
                 
                        
-            <!-- </form> -->
-        </section>
+            
+            </div>
     </main>
 
 
