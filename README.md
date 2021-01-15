@@ -1,5 +1,6 @@
 # server-side-apis-weather-dashboard
 
+! [alt text](https://github.com/richardgabaree/weather-dashboard/blob/master/img/Screen%20Shot%202021-01-14%20at%2010.51.47%20PM.png)
 
 # Homework 6
 
