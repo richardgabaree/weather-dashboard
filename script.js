@@ -84,33 +84,36 @@ $(document).ready(function () {
             } else {
               $(".uvIndex").css("background-color", cyan);
             }
+            for (var i = 0; i < fiveDay.length; i++) {
+              console.log(fiveDay[i])
+              var date = moment.unix(fiveDay[i].dt);
+              console.log(date);
+            
+            
+            }
           });
           });
           });
-          for (var i = 0; i < fiveDay.length; i++) {
-            console.log(fiveDay[i])
-            var date = moment.unix(fiveDay[i].dt);
-            console.log(date);
-          //   $(`#${i}.0`).text(date.format("dddd"));
-          //   $(`#${i}.1`).attr("src", "http://openweathermap.org/img/wn/") +
-          //     fiveDay[i].weather;
-          //  $(`#${i}.2`).text("High: " + day.temp.max);
-          //   $(`#${i}.3`).text("Low: " + day.temp.min);
-          //   $("#.uvIndex").text("UV Index: " + day.uvi);
-          //   if  (fiveDay[i].uvi > 7) {
-          //     $(".uvIndex").css("background-color", red);
-          //   } else {
-          //     $(".uvIndex").css("background-color", cyan);
-          //   }
           
-          }
         }
         
   
   $(".cityHistory").on("click", function () {
     $(".form-control").text(JSON.stringify(this));
-    console.log(this);
+    // console.log(this);
     generateWeather();
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var input = document.getElementById('cityHistory');
+      if (localStorage['cityHistory']) { 
+          input.value = localStorage['job']; // set the value
+      }
+      input.onchange = function () {
+           localStorage['job'] = this.value; // change localStorage on change
+       }
+     
+      })
+  
   });
 
 });

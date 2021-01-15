@@ -18,13 +18,13 @@ h1 {
     text-align: justified;
     font-size: 4rem;
     padding-top: 30px;
-    padding-bottom: 20px:
+    padding-bottom: 20px;
 }
 
 h2 {
     background-color:#f0a345;
     height: 80px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia;
     color: #00063f;
     text-align: center;
     font-size: 3rem;
@@ -63,9 +63,6 @@ h2 {
   
   .icon {
     font-size: 1rem;
-    border: 1px solid grey;
-    margin: 20px;
-    padding: 35px;
     float: left;
     height: 200px;
     width: 100px;
