@@ -70,11 +70,11 @@ $(document).ready(function () {
           console.log(response)
           var daily = response.daily;
           var fiveDay = daily.slice(0, 5); //taking the first 5 days from the daily array
-          console.log(fiveDay);
+          // console.log(fiveDay);
 
           fiveDay.map(function (day) {
             var date = $("<h6>").text(date.format("dddd"));
-            var icon = $("<p>").attr(("<img src='http://openweathermap.org/img/w/" + weatherDataIn.weather[0].icon + ".png'>") +
+            var icon = $("<img>").attr(("<img src='http://openweathermap.org/img/w/" + weatherDataIn.weather[i].icon + ".png'>") +
             fiveDay[i].weather);
             var high = $("<p>").text("High: " + day.temp.max);
             var low = $("<p>").text("Low: " + day.temp.min);

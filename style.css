@@ -15,19 +15,21 @@ h1 {
     height: 150px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
-    text-align: center;
-    font-size: 5rem;
-    padding: 40px;
+    text-align: justified;
+    font-size: 4rem;
+    padding-top: 30px;
+    padding-bottom: 20px:
 }
 
 h2 {
     background-color:#f0a345;
-    height: 100px;
+    height: 80px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #00063f;
     text-align: center;
     font-size: 3rem;
-    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-top: 10px
 }
 .search-label {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -52,9 +54,6 @@ h2 {
   /* Style the submit button */
  button {
     float: left;
-    width: 5%;
-    padding: 10px;
-    background: #2196F3;
     color: white;
     font-size: 17px;
     border: 1px solid grey;
