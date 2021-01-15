@@ -63,9 +63,16 @@ h2 {
   
   .icon {
     font-size: 1rem;
-    float: left;
-    height: 200px;
-    width: 100px;
+    float: right;
+    height: 50px;
+    width: 50px;
     background: #fafafc;
   }
   
+  #fiveDay {
+    margin: 1%;
+    height: 300px;
+    width: 200px;
+    font-size: 17px;
+    background-color: rgb(247, 247, 252);
+  }

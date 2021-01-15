@@ -103,17 +103,40 @@ $(document).ready(function () {
     // console.log(this);
     generateWeather();
 
-    document.addEventListener('DOMContentLoaded', function () {
-      var input = document.getElementById('cityHistory');
-      if (localStorage['cityHistory']) { 
-          input.value = localStorage['job']; // set the value
-      }
-      input.onchange = function () {
-           localStorage['job'] = this.value; // change localStorage on change
-       }
+    // document.addEventListener('DOMContentLoaded', function () {
+    //   var input = document.getElementById('cityHistory');
+    //   if (localStorage['cityHistory']) { 
+    //       input.value = localStorage['cityHistory']; // set the value
+    //   }
+    //   input.onchange = function () {
+    //        localStorage['cityHistory'] = this.value; // change localStorage on change
+    //    }
      
-      })
-  
+    //   })
+    function renderButtons() {
+
+      // Deleting the movies prior to adding new movies
+      // (this is necessary otherwise we will have repeat buttons)
+      $("#buttons-view").empty();
+
+      // Looping through the array of movies
+      for (var i = 0; i < city.length; i++) {
+
+        // Then dynamicaly generating buttons for each movie in the array
+        // This code $("<button>") is all jQuery needs to create the start and end tag. (<button></button>)
+        var a = $("<button>");
+        // Adding a class of movie to our button
+        a.addClass("city");
+        // Adding a data-attribute
+        a.attr("data-name", city[i]);
+        // Providing the initial button text
+        a.text(city[i]);
+        // Adding the button to the HTML
+        $("#buttons-view").append(a);
+      }
+    }
+
+    // This function handles events where 
   });
 
 });
