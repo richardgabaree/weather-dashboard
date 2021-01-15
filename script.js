@@ -46,9 +46,6 @@ $(document).ready(function () {
         $(".city").text("City: " + response.name);
         //change temperature to Imperial
         var tempF = (response.main.temp - 273.15) * 1.80 + 32;
-
-        // $(".temp").text("Temperature : " + response.main.temp);
-        // $(".temp").text("Temperature F: " + response.main.temp);
         $(".humidity").text("Humidity: " + response.main.humidity);
         $(".wind-speed").text("Wind Speed: " + response.wind.speed);
 
@@ -76,9 +73,20 @@ $(document).ready(function () {
           console.log(fiveDay);
 
           fiveDay.map(function (day) {
-           
-          })
-
+            var date = $("<h6>").text(date.format("dddd"));
+            var icon = $("<p>").attr(("<img src='http://openweathermap.org/img/w/" + weatherDataIn.weather[0].icon + ".png'>") +
+            fiveDay[i].weather);
+            var high = $("<p>").text("High: " + day.temp.max);
+            var low = $("<p>").text("Low: " + day.temp.min);
+            var uv = $("<p>").text("UV Index: " + day.uvi);
+            if  (fiveDay[i].uvi > 7) {
+              $(".uvIndex").css("background-color", red);
+            } else {
+              $(".uvIndex").css("background-color", cyan);
+            }
+          });
+          });
+          });
           for (var i = 0; i < fiveDay.length; i++) {
             console.log(fiveDay[i])
             var date = moment.unix(fiveDay[i].dt);
@@ -94,13 +102,15 @@ $(document).ready(function () {
           //   } else {
           //     $(".uvIndex").css("background-color", cyan);
           //   }
+          
           }
-        });
-      });
-  }
+        }
+        
+  
   $(".cityHistory").on("click", function () {
     $(".form-control").text(JSON.stringify(this));
     console.log(this);
     generateWeather();
   });
+
 });

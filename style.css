@@ -63,13 +63,13 @@ h2 {
   }
   
   .icon {
-    font-size: 17px;
+    font-size: 1rem;
     border: 1px solid grey;
     margin: 20px;
     padding: 35px;
     float: left;
-    height: 100px;
-    width: 24px;
-    background: #0e27b6;
+    height: 200px;
+    width: 100px;
+    background: #fafafc;
   }
   
