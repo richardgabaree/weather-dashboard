@@ -6,7 +6,8 @@
 
 .jumbotron{
     height: 100%;
-    margin: 0
+    margin: 0;
+    text-align: auto;
   }
 
 h1 {
@@ -15,16 +16,26 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     text-align: center;
-    font-size: 75px;
-    padding-top: 40px;
+    font-size: 5rem;
+    padding: 40px;
 }
 
+h2 {
+    background-color:#f0a345;
+    height: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #00063f;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 40px;
+}
 .search-label {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
     color: rgb(8, 5, 5);
     text-align: left;
     font-size: 25px;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
   /* Style the search field */
@@ -33,9 +44,10 @@ h1 {
     font-size: 17px;
     border: 1px solid grey;
     float: left;
-    width: 80%;
+    width: 20%;
     background: #f1f1f1;
   }
+  
   
   /* Style the submit button */
  button {
@@ -56,8 +68,8 @@ h1 {
     margin: 20px;
     padding: 35px;
     float: left;
-    height: 48px;
+    height: 100px;
     width: 24px;
-    background: #f1f1f1;
+    background: #0e27b6;
   }
   
